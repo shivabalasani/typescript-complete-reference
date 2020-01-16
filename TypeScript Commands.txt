@@ -1,0 +1,16 @@
+
+http://www.typescriptlang.org/play/index.html
+
+Typescript Compiler
+npm install -g typescript ts-node
+tsc --help
+
+Fake JSON API : https://jsonplaceholder.typicode.com/
+npm init -y
+npm install axios
+
+Compile typescript file :
+tsc index.ts
+node index.js
+
+ts-node index.ts  --- To Compile (tsc index.ts) and run the index.js (node index.js)
