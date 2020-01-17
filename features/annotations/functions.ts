@@ -27,7 +27,12 @@ const logger = (message: string): void => {
   console.log(message);
 };
 
-const throwError = (message: string): void => {
+//We annotate a function with never only when we expect a function not to return anything
+const throwError = (message: string): never => {
+    throw new Error(message);
+};
+
+const throwErrorWithVoid = (message: string): void => {
   if (!message) {
     throw new Error(message);
   }
@@ -38,13 +43,8 @@ const todaysWeather = {
   weather: 'sunny'
 };
 
-const logWeather = ({
-  date,
-  weather
-}: {
-  date: Date;
-  weather: string;
-}): void => {
+//ES2015 sytax with object destructing 
+const logWeather = ({date, weather}: { date: Date; weather: string;}): void => {
   console.log(date);
   console.log(weather);
 };
