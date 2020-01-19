@@ -33,4 +33,40 @@ Any Type - A type, just as 'string' or 'boolean' are
          - Meanst TS has no idea what this is - can't check for correct property references.
          - Avoid variables with 'any' at all costs
 
+Abstract classes 
+        - Can't be used to create an object directly.
+        - Only used as a parent class
+        - Can contain real implementation for some methods.
+        - The implemented methods can refer to other methods that don't actually exists yet. 
+            (we still have to provide name and types for the un-implemented methods)
+        - Can make child classes promise to implement some other method.
+
+Interfaces 
+        - Sets up a contract between different classes.
+        - Use when we have very different objects that we want to work together.
+        - Promotes loose coupling.
+
+Inheritance/Abstract Classes
+        - Sets up a contract between different classes.
+        - Use when we are trying to build up a definition of an object.
+        - Strongly couples classes together.
+
+Enums
+    - Follows near identical syntax rules as normal objects.
+    - Creates an object with the same keys and values when converted from TS to JS.
+    - Primary goal is to signal to other engineers that these are all closely related values.
+    - Use whenver we have a small fixed set of values that are all closely related and known at compile time.
+
+
+Generics 
+    - Like function arguments, but for types in class/function definitions.
+    - Allows us to define the type of a property/argument/return value at a future point.
+    - Used heavily when writing reusable code.
+
+Inheritance
+    - Charecterized by an is-a relationship between two classes.
+
+Composition
+    - Charecterized by an has-a relationship between two classes.
+
 */

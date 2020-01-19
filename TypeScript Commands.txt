@@ -18,3 +18,12 @@ ts-node index.ts  --- To Compile (tsc index.ts) and run the index.js (node index
 
 npm install -g parcel-bundler  -- Tool to help us run Typescript in the browser
 parcel index.html
+
+To generate tsconfig.json file
+tsc --init  
+
+To watch typescript file changes in 'rootDir' and compile to js file in 'outDir'
+tsc -w
+
+Use nodemon to execute code when the file has been compiled. Use concurrently to run multiple scripts at the same time.
+npm install nodemon concurrently
