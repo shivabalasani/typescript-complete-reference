@@ -30,3 +30,5 @@ npm install nodemon concurrently
 
 npm install -g json-server
 json-server -w db.json
+
+npm install express body-parser cookie-session

@@ -72,4 +72,13 @@ Composition
 In Typescript, strings can be types
 In JS (and therefore in TS), all object keys are strings.
 
+Integration Issues :-
+CONS 
+    - Type definition files alone can't express what is going on in the JS world accurately(Example: BodyParser Middleware).
+    - Type definition files provided to us aren't always accurate.
+    - Inputs to a server (or any program with external inputs) are not guaranteed to exist, or be of the correct type.
+
+PROS    
+    - Addressing these type issues with Typescript can force us to write better code.
+
 */
