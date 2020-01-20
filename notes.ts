@@ -69,4 +69,7 @@ Inheritance
 Composition
     - Charecterized by an has-a relationship between two classes.
 
+In Typescript, strings can be types
+In JS (and therefore in TS), all object keys are strings.
+
 */

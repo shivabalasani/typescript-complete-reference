@@ -27,3 +27,6 @@ tsc -w
 
 Use nodemon to execute code when the file has been compiled. Use concurrently to run multiple scripts at the same time.
 npm install nodemon concurrently
+
+npm install -g json-server
+json-server -w db.json
