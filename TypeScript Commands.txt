@@ -34,3 +34,5 @@ json-server -w db.json
 npm install express body-parser cookie-session
 
 npm install reflect-metadata
+
+npx create-react-app rrts --typescript
